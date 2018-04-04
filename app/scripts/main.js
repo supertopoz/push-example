@@ -20,7 +20,7 @@
 /* eslint-env browser, es6 */
 
 'use strict';
-
+console.log('working')
 const applicationServerPublicKey = 'BKDQ0i9z6GkVPHlFxSm-X9at4W3eLamMv9bH6L750OMr1ghCSoYFTyOMfg1splX7JgR9K67hruPY6f8dWsE0g-Y';
 
 const pushButton = document.querySelector('.js-push-btn');

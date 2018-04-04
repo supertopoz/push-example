@@ -25,7 +25,7 @@ self.addEventListener('push', function(event) {
   console.log('[Service Worker] Push Received.');
   console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
 
-  const title = 'Pushing like and App';
+  const title = 'ILA Connect';
   const options = {
     body: event.data.text(),
     icon: 'images/icon.png',
@@ -41,6 +41,6 @@ self.addEventListener('notificationclick', function(event) {
   event.notification.close();
 
   event.waitUntil(
-    clients.openWindow('https://developers.google.com/web/')
+    clients.openWindow('http://connect.ila.edu.vn')
   );
 });
